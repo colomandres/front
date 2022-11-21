@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/functionReservation.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+  </head>
+  <body>
+    <div
+    class="fixed inset-0 bg-gradient-to-r bg-gradient-to-r from-black to-[#A757E1]"
+  >
+    
+    <h1 class="text-center text-white font-bold text-6xl">Reservations</h1>
+    <br><br><br><br>
+    <div class="text-center" align ="center">
+    
+      <label>Select Your Reservation Start Date</label>
+      <input type="date" id="startDate"/> <br><br>
+      <label>Select Your Reservation End Date</label>
+      <input type="date" id="devolutionDate"/> <br><br>
+      <label>Select Your Reservation Status</label>
+      <select name="Status" id="status" >
+        <option value="completed">Completed</option>
+        <option value="cancelled">Cancelled</option>
+      </select><br><br>
+      <label>Client</label>
+      <select name="Client" id="select-client"></select><br><br>
+      <label>Car</label>
+      <select name="Car" id="select-car"></select><br><br>
+    
+   <button class="bg-gray-900 hover:bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-white font-bold py-2 px-4 rounded-full" onclick="postReservation()">Create Reservation</button>
+    </div>
+    <br>
+        <div id= "result1" class="center text-white" align="center">
+          <script type="text/javascript">
+            window.onload = getReservation();
+          </script>
+      
+          <script type="text/javascript">
+            window.onload = getReservation_Car();
+          </script>
+      
+          <script type="text/javascript">
+            window.onload = getReservation_Client();
+          </script>
+        </div>
+  </div>
+  </div>
+  </div>
+
+
+<nav>
+  <div class="pointer-events-none fixed inset-y-0 left-0 flex max-w-0 pl-0">
+      
+    <div class="pointer-events-auto relative w-screen max-w-md">
+      
+      <div class="flex h-full flex-col overflow-y-scroll bg-gradient-to-r from-[#A757E1] to-[#1B253E]  ... py-6 shadow-xl">
+      
+        <div class="px-4 sm:px-6">
+                        <ul>
+                      <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                      <a href="index.html" class="text-gray-300 hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium" >Inicio</a><br><br>
+
+                      <a href="gama.html" class="text-gray-300 hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Gamas</a><br><br>
+                      
+                      <a href="car.html" class="text-gray-300 hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Cars</a><br><br>
+        
+                      <a href="client.html" class="text-gray-300 hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Clients</a><br><br>
+        
+                      <a href="message.html" class="text-gray-300 hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Messages</a><br><br>
+        
+                      <a href="reservation.html" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Reservations</a><br><br>
+
+                      <a href="reports.html" class="text-gray-300 hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  hover:text-white px-3 py-2 rounded-md text-sm font-medium">Reports</a><br>
+                    </ul>
+                  </div>
+                </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
